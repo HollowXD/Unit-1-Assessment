@@ -50,8 +50,17 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
-
+var totalAcres = 0;
+for (let i = 0; i < fujiAcres.length; i +=1){
+    totalAcres += fujiAcres[i];
+}
+for (let i = 0; i < galaAcres.length; i +=1){
+    totalAcres += galaAcres[i];
+}
+for (let i = 0; i < pinkAcres.length; i +=1){
+    totalAcres += pinkAcres[i];
+}
+console.log(totalAcres)
 
 
 
@@ -68,8 +77,8 @@ const pinkPrice = .55
 */
 
 // CODE HERE
-
-
+var averageDailyAcres = totalAcres / 7;
+console.log(averageDailyAcres)
 
 
 
@@ -106,7 +115,11 @@ let acresLeft = 174
 let days = 0
 
 // CODE HERE
-
+while(acresLeft > 0){
+    days += 1
+    acresLeft -= averageDailyAcres
+}
+console.log(days)
 
 
 // PROBLEM 4
@@ -135,9 +148,13 @@ let days = 0
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+ let fujiTons = fujiAcres.slice()
+ for (let i = 0; i < fujiAcres.length; i++){
+    console.log(fujiAcres[i])
+ }
+ console.log(fujiTons)
+ let galaTons = galaAcres.slice()
+ let pinkTons = pinkAcres.slice()
 
 
 
