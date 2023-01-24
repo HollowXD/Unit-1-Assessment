@@ -151,17 +151,17 @@ console.log(days)
  let fujiTons = fujiAcres.slice()
  for (let i = 0; i < fujiTons.length; i++){
     fujiTons[i] *= 6.3;
-    console.log(fujiTons)
+    console.log(fujiTons[i])
  }
  let galaTons = galaAcres.slice()
  for (let i = 0; i < galaTons.length; i++){
     galaTons[i] *= 6.3;
-    console.log(galaTons)
+    console.log(galaTons[i])
  }
  let pinkTons = pinkAcres.slice()
  for (let i = 0; i < pinkTons.length; i++){
     pinkTons[i] *= 6.3;
-    console.log(pinkTons)
+    console.log(pinkTons[i])
  }
 
 
@@ -187,7 +187,12 @@ console.log(days)
 
 // CODE HERE 
 
-//let fujiPounds =
+let fujiPounds = 0
+for (let i = 0; i < fujiTons.length; i++){
+    fujiTons[i] *= 2000;
+    fujiPounds += fujiTons[i];
+    console.log(fujiPounds)
+}
 //let galaPounds =
 //let pinkPounds =
 
