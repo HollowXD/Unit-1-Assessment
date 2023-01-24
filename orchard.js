@@ -51,13 +51,13 @@ const pinkPrice = .55
 
 // CODE HERE
 var totalAcres = 0;
-for (let i = 0; i < fujiAcres.length; i +=1){
+for (let i = 0; i < fujiAcres.length; i++){
     totalAcres += fujiAcres[i];
 }
-for (let i = 0; i < galaAcres.length; i +=1){
+for (let i = 0; i < galaAcres.length; i++){
     totalAcres += galaAcres[i];
 }
-for (let i = 0; i < pinkAcres.length; i +=1){
+for (let i = 0; i < pinkAcres.length; i++){
     totalAcres += pinkAcres[i];
 }
 console.log(totalAcres)
@@ -149,12 +149,20 @@ console.log(days)
 // CODE HERE
 
  let fujiTons = fujiAcres.slice()
- for (let i = 0; i < fujiAcres.length; i++){
-    console.log(fujiAcres[i])
+ for (let i = 0; i < fujiTons.length; i++){
+    fujiTons[i] *= 6.3;
+    console.log(fujiTons)
  }
- console.log(fujiTons)
  let galaTons = galaAcres.slice()
+ for (let i = 0; i < galaTons.length; i++){
+    galaTons[i] *= 6.3;
+    console.log(galaTons)
+ }
  let pinkTons = pinkAcres.slice()
+ for (let i = 0; i < pinkTons.length; i++){
+    pinkTons[i] *= 6.3;
+    console.log(pinkTons)
+ }
 
 
 
@@ -179,9 +187,9 @@ console.log(days)
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+//let fujiPounds =
+//let galaPounds =
+//let pinkPounds =
 
 
 
